@@ -1,0 +1,34 @@
+decoder-arbitrary-ende-attn-all-subtransformer:
+- -1
+- -1
+- 1
+decoder-embed-dim-subtransformer: 512
+decoder-ende-attention-heads-all-subtransformer:
+- 8
+- 4
+- 8
+decoder-ffn-embed-dim-all-subtransformer:
+- 1024
+- 1024
+- 1024
+decoder-layer-num-subtransformer: 0
+decoder-self-attention-heads-all-subtransformer:
+- 8
+- 8
+- 8
+encoder-embed-dim-subtransformer: 512
+encoder-ffn-embed-dim-all-subtransformer:
+- 3072
+- 3072
+- 3072
+- 3072
+- 3072
+- 3072
+encoder-layer-num-subtransformer: 6
+encoder-self-attention-heads-all-subtransformer:
+- 4
+- 4
+- 4
+- 4
+- 4
+- 8
