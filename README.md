@@ -2,7 +2,7 @@
 
 This is Official **PyTorch implementation** for 2023-NeurIPS-MathNAS: If Blocks Have a Role in Mathematical Architecture Design. 
 
-For **a quick overview** of this work you can look at the [poster](https://ah-miu.github.io/AboutPageAssets/images/other-material/mathnas-poster-6.png) made by the two main authors, [Qinsi Wang*](https://wangqinsi1.github.io/) and [Jinghan Ke*](https://ah-miu.github.io/). 
+For **a quick overview** of this work you can look at the [poster](https://neurips.cc/media/PosterPDFs/NeurIPS%202023/70987.png?t=1699703256.6154978) made by the two main authors, [Qinsi Wang*](https://wangqinsi1.github.io/) and [Jinghan Ke*](https://ah-miu.github.io/). 
 
 For **more details and supplementary material content** please see the [paper](https://openreview.net/pdf?id=e1l4ZYprQH).
 
