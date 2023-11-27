@@ -6,6 +6,7 @@ For **a quick overview** of this work you can look at the [poster](https://neuri
 
 For **more details and supplementary material content** please see the [paper](https://openreview.net/pdf?id=e1l4ZYprQH).
 
+If you find it useful, please feel free to cite:
 ```bash
 @inproceedings{qinsi2023mathnas,
   title={MathNAS: If Blocks Have a Role in Mathematical Architecture Design},
