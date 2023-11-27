@@ -6,6 +6,15 @@ For **a quick overview** of this work you can look at the [poster](https://neuri
 
 For **more details and supplementary material content** please see the [paper](https://openreview.net/pdf?id=e1l4ZYprQH).
 
+```bash
+@inproceedings{qinsi2023mathnas,
+  title={MathNAS: If Blocks Have a Role in Mathematical Architecture Design},
+  author={Qinsi, Wang and Ke, JingHan and Liang, Zhi and Zhang, Sihai},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023}
+}
+```
+
 ## Prerequisites
 
 ---
