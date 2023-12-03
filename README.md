@@ -6,12 +6,12 @@ For **a quick overview** of this work you can look at the [poster](https://neuri
 
 For **more details and supplementary material content** please see the [paper](https://openreview.net/pdf?id=e1l4ZYprQH).
 
-If you find it useful, please feel free to cite:
+If you find MathNAS useful in your research, please consider citing:
 ```bash
-@inproceedings{qinsi2023mathnas,
+@article{qinsi2023mathnas,
   title={MathNAS: If Blocks Have a Role in Mathematical Architecture Design},
-  author={Qinsi, Wang and Ke, JingHan and Liang, Zhi and Zhang, Sihai},
-  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  author={Qinsi, Wang and Jinhan, Ke and Zhi, Liang and Sihai, Zhang},
+  journal={arXiv preprint arXiv:2311.04943},
   year={2023}
 }
 ```
