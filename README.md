@@ -9,10 +9,12 @@ For **more details and supplementary material content** please see the [paper](h
 If you find MathNAS useful in your research, please consider citing:
 ```bash
 @article{qinsi2023mathnas,
-  title={MathNAS: If Blocks Have a Role in Mathematical Architecture Design},
-  author={Qinsi, Wang and Jinhan, Ke and Zhi, Liang and Sihai, Zhang},
-  journal={arXiv preprint arXiv:2311.04943},
-  year={2023}
+      title={MathNAS: If Blocks Have a Role in Mathematical Architecture Design}, 
+      author={Wang Qinsi and Ke Jinghan and Liang Zhi and Zhang Sihai},
+      year={2023},
+      eprint={2311.04943},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
 
