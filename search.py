@@ -273,20 +273,20 @@ def mobilenetv3_search(topk1,latency,latencylimit,device):
 
 
 def nasbench201_search(topk1,latency,energy, latencylimit,energylimit,device):
-    lat_base = 5711 if device == 'edgegpu' else 899
-    eng_base = 23834 if device == 'edgegpu' else 6291
+    lat_base = 5711 if device == 'fpga' else 899
+    eng_base = 23834 if device == 'fpga' else 6291
     print('start heavy search')
     model = gp.Model("mip1")
     x = model.addVars(30, name = 'x', vtype = GRB.BINARY)
-    model.setObjective(40.78-sum(x[i*5+j]*topk1[i,j] for i in range(6)for j in range(5)))
+    model.setObjective(40.78 - sum(x[i*5+j]*topk1[i,j] for i in range(6)for j in range(5)), GRB.MAXIMIZE)
     model.addConstr(x[0] + x[1] + x[2] + x[3] + x[4] == 1, "c0")
     model.addConstr(x[5] + x[6] + x[7] + x[8] + x[9] == 1, "c1")
     model.addConstr(x[10] + x[11] + x[12] + x[13] + x[14] == 1, "c2")
     model.addConstr(x[15] + x[16] + x[17] + x[18] + x[19] == 1, "c3")
     model.addConstr(x[20] + x[21] + x[22] + x[23] + x[24] == 1, "c4")
     model.addConstr(x[25] + x[26] + x[27] + x[28] + x[29] == 1, "c5")
-    model.addConstr(lat_base-sum(x[i*5+j]*latency[i,j] for i in range(6)for j in range(5))<= latencylimit, "c6")
-    model.addConstr(eng_base-sum(x[i*5+j]*energy[i,j] for i in range(6)for j in range(5))<= energylimit, "c7")
+    model.addConstr(lat_base - sum(x[i*5+j]*latency[i,j] for i in range(6)for j in range(5))<= latencylimit, "c6")
+    model.addConstr(eng_base - sum(x[i*5+j]*energy[i,j] for i in range(6)for j in range(5))<= energylimit, "c7")
     model,accnew=search(model)
     
     archlast=[]
