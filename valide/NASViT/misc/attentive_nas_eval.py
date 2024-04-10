@@ -31,8 +31,8 @@ def validate(
         if isinstance(model, torch.nn.parallel.DistributedDataParallel) else model
 
     with torch.no_grad():
-        for net_id in subnets_to_be_evaluated:
-             
+        #for net_id in subnets_to_be_evaluated:
+        net_id = subnets_to_be_evaluated     
         supernet.set_active_subnet(
                 subnets_to_be_evaluated[net_id]['resolution'],
                 subnets_to_be_evaluated[net_id]['width'],

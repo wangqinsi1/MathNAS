@@ -18,23 +18,17 @@ If you find MathNAS useful in your research, please consider citing:
 }
 ```
 
-## Prerequisites
-
----
-
-- Python 3.7 (Anaconda)
-- PyTorch 1.9.0
-- CUDA 11.1
-
 ## Installation
 
 ---
+
+The code has been tested with Python 3.7 , PyTorch 1.9.0 , CUDA 11.1. You can also run it using higher versions.
 
 ```bash
 conda create --name mathnas python=3.7
 conda activate mathnas
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
-pip install nas-bench-201
+pip install nas-bench-201 scipy pyyaml psutil timm yacs
 pip install -i https://pypi.gurobi.com gurobipy
 ```
 
@@ -211,7 +205,7 @@ You can perform a latency-limited search on Raspberry Pi, Intel Xeon CPU and Nvi
 ```bash
 $ python main.py
 		 --mode nas \
-		 --search_space supertransformer  \
+		 --search_space supertransformer \
 		 --device [raspberrypi/xeon/titanxp] \
 		 --latency_constraint [number of latency]
 ```

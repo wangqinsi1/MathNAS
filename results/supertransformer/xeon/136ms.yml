@@ -5,7 +5,7 @@ decoder-ende-attention-heads-all-subtransformer:
 - 4
 decoder-ffn-embed-dim-all-subtransformer:
 - 3072
-decoder-layer-num-subtransformer: 0
+decoder-layer-num-subtransformer: 1
 decoder-self-attention-heads-all-subtransformer:
 - 4
 encoder-embed-dim-subtransformer: 512

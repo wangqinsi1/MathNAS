@@ -17,15 +17,15 @@ def supervit_predict(acc_difference, flop_difference, arch_path):
     print('The predicted latency of the net is {:.1f} M'.format(flop_predict))
     return acc_predict, flop_predict
 
-
 def supertransformer_predict(acc_difference, lat_difference, device, arch_path):
     with open(arch_path, 'r') as file:
         archdict = yaml.load(file, Loader=yaml.FullLoader)
     print('The net arch is',archdict) 
     archcode = supertransformer_code(archdict)
-    acc_predict = 26.61-sum(acc_difference[i][int(archcode[i])] for i in range(len(acc_difference)))
-    lat_base = 9200 if device == 'raspberry pi' else 407.2 if device == 'xeon' else 274.4
-    lat_predict=lat_base-sum(lat_difference[i][int(archcode[i])] for i in range(len(lat_difference))) 
+    acc_predict = 26.61-sum(acc_difference[i][int(archcode[i])] for i in range(len(archcode)))
+    lat_base = lat_difference[len(archcode)-1][-1]
+    lat_predict=lat_base-sum(lat_difference[i][int(archcode[i])] for i in range(len(archcode)-1)) 
+    
     print('The predicted accuracy of the net is {:.1f} %'.format(acc_predict))
     print('The predicted latency of the net is {:.1f} s'.format(lat_predict))
     return acc_predict, lat_predict

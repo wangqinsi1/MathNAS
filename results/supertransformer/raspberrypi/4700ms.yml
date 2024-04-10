@@ -11,7 +11,7 @@ decoder-ffn-embed-dim-all-subtransformer:
 - 1024
 - 1024
 - 1024
-decoder-layer-num-subtransformer: 0
+decoder-layer-num-subtransformer: 3
 decoder-self-attention-heads-all-subtransformer:
 - 8
 - 8
